@@ -18,8 +18,13 @@
       <input type="text" name="Straße" required><br><br>
 
       <label>Hausnummer:</label><br>
-<input type="number" name="Hausnummer" required><br><br>
-
+<input 
+  type="text" 
+  name="Hausnummer" 
+  required 
+  pattern="[0-9]+[a-zA-Z0-9/-]*"
+  title="Bitte eine gültige Hausnummer eingeben, z.B. 8a, 12B, 3-5 oder 7/2."
+><br><br>
 
       <label>Email:</label><br>
       <input type="email" name="Email" required><br><br>
